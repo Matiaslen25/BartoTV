@@ -1,0 +1,95 @@
+normalizar
+* { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+body {
+    background-color: #1d2835;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../img/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.5rem;
+}
+
+.logo:hover {
+    transform: rotateY(360deg);
+    transition: 800ms all;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/*****************SELECT USER*******************/
+
+h1.selectUser {
+    font-weight: normal;
+}
+
+header.selectUser {
+    display:flex;
+    font-weight: 700;
+    align-items: center;
+    font-size: 1rem;
+}
+
+main.selectUser {
+    margin-top: 10vh;
+}
+.userProfile {
+    display:flex;
+    justify-content: center;
+}
+
+.cardUserProfile {
+    margin: 5vh 5vw 0 5vw;
+}
+
+.userProfile img {
+    max-width: 20vw;
+    height: 30vh;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 1rem #141a22;
+    margin-bottom: 0.5rem;
+}
+
+.userProfile img:hover {
+    transform: scale(1.05);
+    transition: 450ms all;
+    border: solid 3px rgba(238, 238, 238, 0.7);
+    box-shadow: 0 1rem 1rem #141a22;
+}
+
+.userProfile img:hover + p {
+    color: white;
+}
+
+.userProfile p:hover {
+    color: white;
+}
+
+.selectUser a{
+    text-decoration: none;
+    color: grey;
+}
+
+/*Tablet*/
+@media (max-width: 768px){
+    .userProfile img {
+        max-width: 40vw;
+        height: 25vh;
+    }
+}
+
+/*Smartphone*/
+@media (max-width: 460px){
+    .userProfile img {
+        max-width: 40vw;
+        height: 20vh;
+    }
+}
