@@ -1,0 +1,177 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-width: 400px;
+}
+
+/*HEADER*/
+
+header{
+    position: relative;
+    margin: 0%;
+    background-color:#334257    ;
+    min-width: 400px;
+}
+
+/*FIN HEADER*/
+
+/*MAIN*/
+main{
+    display: flex;
+    position: relative;
+    background-image: url('../img/fondoPelis.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100vw;
+    min-width: 400px;
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.disableBlur {
+    filter: blur(0);
+}
+
+main div{    
+    overflow:hidden;
+    position:relative;
+    width: 20vw;
+    min-width: 400px;
+    background-color: rgba(36, 36, 36, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 10px;
+}
+
+form{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2{
+    color: #EEEEEE;
+    align-self: center;
+}
+
+form input{
+    line-height: 3em;
+    border-radius: 10px;
+    background-color: #333941;
+    border: 0ch;
+    color: #EEEEEE;
+}
+
+form input::placeholder{
+    color: #EEEEEE;
+}
+
+form button{
+    color: #EEEEEE;
+    background-color: #333941;
+    height: 48px;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 1.2em;
+    align-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+p{
+    color: #EEEEEE;
+    margin: 20px 0 0 0;
+}
+
+.checkbox{
+    align-self: flex-start;
+}
+
+.pRegistro{
+    margin-bottom: 30px;
+}
+
+a{    
+    text-decoration: none;
+    color: #5c7ba5;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*EFECTO BOTÓN*/
+form button:before,
+form button:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 200% 200%;
+  background: linear-gradient(
+    60deg,
+    #333941,
+    #454e58,
+    #454e58,
+    #333941
+  );
+}
+
+form button:before {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
+}
+
+form button:after {
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+}
+
+form button:hover:before {
+  width: 115%;
+  height: 115%;
+}
+
+form button:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,2);
+}
+/*EFECTO BOTÓN*/
+
+footer{
+    position: relative;
+    margin: 0%;
+    background-color:black;
+    min-width: 400px;
+}
