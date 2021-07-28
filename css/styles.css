@@ -30,6 +30,7 @@ body {
 
 h1.selectUser {
     font-weight: normal;
+    font-size: 30px;
 }
 
 header.selectUser {
@@ -56,7 +57,7 @@ main.selectUser {
     height: 30vh;
     border-radius: 1.5rem;
     box-shadow: 0 1rem 1rem #141a22;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .userProfile img:hover {
