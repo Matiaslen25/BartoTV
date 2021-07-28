@@ -1,17 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <title>BartoTV</title>
-        <link rel="shortcut icon" href="img/loguito.svg">
-    </head>
-<body>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesHeader.css">
+    <link rel="stylesheet" href="css/stylesFilters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>BartoTV</title>
+    <link rel="shortcut icon" href="img/loguito.svg">
+</head>
+<body class="principal">
+    <header class="principalHeader sticky">
+        <div class="header1">
+            <div class="logo"></div>
+            <nav class="nav-hamburguesa">
+                <input type="checkbox" id="menuH">
+                <label for="menuH">☰</label>
+                <ul>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">MyList</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-principal">
+                <ul>
+                    <a href="#" style="pointer-events:none">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Movies</li>
+                    </a>
+                    <a href="#">
+                        <li>TV Shows</li>
+                    </a>
+                    <a href="#">
+                        <li>My List</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="header2">
+            <input type="search" placeholder="Search..">                 
+            <p>Mati y Agus</p>
+            <img class="user" src="img/profile_mati_agus.png" alt="">
+            <nav class="userMenu">
+                <input type="checkbox" id="menu">
+                <label for="menu"><img class="arrow" src="img/arrow_down.png" alt=""></label>
+                <ul>
+                    <li><a href="user1.html"><span>Victor</span></a></li>
+                    <li><a href="#"><span>Create profile</span></a></li>
+                    <li><a href="index.html"><span>Sign out</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div class="preview">
+        <video autoplay>
+            <source src="img/jujutsu.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="filters">
+        <div class="marvel">
+            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=600&aspectRatio=1.78&format=png" alt="">
+            <video autoplay loop playsinline src="https://vod-bgc-sa-east-1.media.dssott.com/bgui/ps01/disney/bgui/2019/08/01/1564676115-marvel.mp4"></video>
+        </div>
+        <div class="starwars">
+            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=600&aspectRatio=1.78&format=png" alt="">
+            <video autoplay loop playsinline src="https://vod-bgc-sa-east-1.media.dssott.com/bgui/ps01/disney/bgui/2020/12/17/1608229455-star-wars.mp4"></video>
+        </div>
+        <div class="anime">
+            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=600&aspectRatio=1.78&format=png" alt="">
+        </div>
+        <div class="disney">
+            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=600&aspectRatio=1.78&format=png" alt="">
+            <video autoplay loop playsinline src="https://vod-bgc-sa-east-1.media.dssott.com/bgui/ps01/disney/bgui/2019/08/01/1564674844-disney.mp4"></video>
+
+        </div>
+
+    </div>
 </body>
 </html>
