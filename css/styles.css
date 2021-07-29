@@ -14,12 +14,12 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .logo:hover {
     transform: rotateY(360deg);
-    transition: 800ms all;
+    transition: 1500ms all;
 }
 
 .textCenter {
