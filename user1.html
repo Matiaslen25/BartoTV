@@ -407,6 +407,24 @@
     <p>© 2021 All rights reserved </p>
     <p>Agustina García Rey and Matías Len</p>
 </footer>
+<script>
+    $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+        if($(this).scrollTop() > 500) { 
+            $('.principalHeader').css("background", "#1d2835");
+        } else {
+            $('.principalHeader').css("background", "linear-gradient(to bottom,rgba(0,0,0,.7) 25%,rgba(0,0,0,0)");
+        }
+
+        if($(this).scrollTop() > 1500) { 
+            $('.principalHeader').css("display", "none");
+        }else {
+            $('.principalHeader').css("display", "flex");
+        }});
+});
+</script>
 </body>
 
 </html>

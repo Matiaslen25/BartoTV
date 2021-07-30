@@ -63,7 +63,7 @@ html{
     grid-template-columns: repeat(1,100%);
     overflow: hidden;
     scroll-behavior: smooth;
-    z-index: 10;
+    z-index: 2;
 }
 
 .trendingCarouselPage{
@@ -170,6 +170,8 @@ h3 {
         width: 15rem;
         height: 9rem;
     }
+
+
 
     .card:hover{
         margin: 0 20px;
