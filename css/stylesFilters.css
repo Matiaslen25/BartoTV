@@ -164,6 +164,7 @@ button.fav:hover{
 
     .mobile {
         display: flex;
+        margin-bottom: 4.5rem;
     }
 
     .mobile div {
@@ -192,8 +193,11 @@ button.fav:hover{
         top: 30%;
         left: 20%;
     }
+
+    
 }
 
-@media (min-width: 1366px) {  .infoPreview {
+@media (min-width: 1366px) {  
+    .infoPreview {
     top: 40rem;
 }}

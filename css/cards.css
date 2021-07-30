@@ -83,8 +83,10 @@ html{
 .trendingCard p{
     position: absolute;
     font-size: 5rem;
+
     z-index: 3;
-    -webkit-text-stroke: 2px rgb(75, 72, 72);    
+    -webkit-text-stroke: 2px rgba(61, 59, 59, 0.664);
+    text-shadow: 0 5px 6px black;    
     margin-left: 5px;
 
 }
@@ -209,6 +211,20 @@ h3 {
 @media (max-width: 535px){
     .responsive6{
         display: none;
+    }
+    .category{
+        height: 10rem;
+    }
+
+    #continueWatching1 img{
+        width: 9.2rem;
+        height: 6rem;
+    }
+
+    .card img {
+        width: 11.5rem;
+        height: 8.5rem;
+        margin-right: 1rem;
     }
 }
 
