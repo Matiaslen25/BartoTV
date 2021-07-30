@@ -184,27 +184,27 @@
                     <p>3</p>
                 </div>
                 <div class="trendingCard responsive5">
-                    <img src="img/marginal.jpg" alt="">
+                    <img src="img/himym.jpg" alt="">
                     <p>4</p>
                 </div>
                 <div class="trendingCard responsive4">
-                    <img src="img/brBa.jpg" alt="">
+                    <img src="img/mrRobot.jpg" alt="">
                     <p>5</p>
                 </div>
                 <div class="trendingCard responsive3">
-                    <img src="img/himym.jpg" alt="">
+                    <img src="img/blackMirror.jpg" alt="">
                     <p>6</p>
                 </div>
                 <div class="trendingCard responsive2">
-                    <img src="img/blackMirror.jpg" alt="">
+                    <img src="img/brBa.jpg" alt="">
                     <p>7</p>
                 </div>
                 <div class="trendingCard responsive1">
-                    <img src="img/seeYou.jpg" alt="">
+                    <img src="img/marginal.jpg" alt="">
                     <p>8</p>
                 </div>
                 <div class="trendingCard responsive1">
-                    <img src="img/mrRobot.jpg" alt="">
+                    <img src="img/seeYou.jpg" alt="">
                     <p>9</p>
                 </div>
             </section>
@@ -419,11 +419,11 @@
             $('.principalHeader').css("background", "linear-gradient(to bottom,rgba(0,0,0,.7) 25%,rgba(0,0,0,0)");
         }
 
-        if($(this).scrollTop() > 1500) { 
+        if(($(this).scrollTop() > 1500 && $(window).width() > 1200) || ($(this).scrollTop() > 1900 && $(window).width() > 1900)) { 
             $('.principalHeader').css("display", "none");
         }else {
             $('.principalHeader').css("display", "flex");
-        }});
+        }
 });
 </script>
 </body>
