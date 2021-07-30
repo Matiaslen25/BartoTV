@@ -16,9 +16,11 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>BartoTV</title>
     <link rel="shortcut icon" href="img/loguito.svg">
 </head>
+
 <body>
     <header class="principalHeader sticky">
         <div class="header1">
@@ -50,7 +52,7 @@
             </nav>
         </div>
         <div class="header2">
-            <input type="search" placeholder="Search..">                 
+            <input type="search" placeholder="Search..">
             <p>Victor</p>
             <img class="user" src="img/profile_victor.png" alt="">
             <nav class="userMenu">
@@ -121,13 +123,13 @@
     </div>
     <div class="filters mobile">
         <div>
-            <a href="">
+            <a href="#marvel1">
                 <div class="filterMobile">
                     <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=600&aspectRatio=1.78&format=png"
                         alt="">
                 </div>
             </a>
-            <a href="">
+            <a href="starWars1">
                 <div class="filterMobile">
                     <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=600&aspectRatio=1.78&format=png"
                         alt="">
@@ -135,12 +137,12 @@
             </a>
         </div>
         <div>
-            <a href="">
+            <a href="#anime1">
                 <div class="animeMobile filterMobile">
                     <img src="img/anime.png" alt="">
                 </div>
             </a>
-            <a href="">
+            <a href="#disney1">
                 <div class="filterMobile">
                     <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=600&aspectRatio=1.78&format=png"
                         alt="">
@@ -161,7 +163,7 @@
                 </div>
             </section>
     </div>
-    
+
 
     <!--Trending-->
     <div>
@@ -231,9 +233,9 @@
                 </div>
                 <a href="#anime2" class="carouselArrow arrow-right">›</a>
             </section>
-    
+
             <section class="carouselPage" id="anime2">
-                <a href="#anime1" class="carouselArrow arrow-left">‹</a>
+                <a href="#anime1" class="carouselArrow arrow-left anchor">‹</a>
                 <div class="card">
                     <img src="img/deathNote.jpg" alt="">
                 </div>
@@ -249,7 +251,7 @@
                 <div class="card responsive1">
                     <img src="img/yourName.jpg" alt="">
                 </div>
-                <a href="#anime1" class="carouselArrow arrow-right">›</a>
+                <a href="#anime1" class="carouselArrow arrow-right anchor">›</a>
             </section>
         </div>
     </div>
@@ -277,7 +279,7 @@
                 </div>
                 <a href="#disney2" class="carouselArrow arrow-right">›</a>
             </section>
-    
+
             <section class="carouselPage" id="disney2">
                 <a href="#disney1" class="carouselArrow arrow-left">‹</a>
                 <div class="card">
@@ -323,7 +325,7 @@
                 </div>
                 <a href="#marvel2" class="carouselArrow arrow-right">›</a>
             </section>
-    
+
             <section class="carouselPage" id="marvel2">
                 <a href="#marvel1" class="carouselArrow arrow-left">‹</a>
                 <div class="card">
@@ -369,7 +371,7 @@
                 </div>
                 <a href="#starWars2" class="carouselArrow arrow-right">›</a>
             </section>
-    
+
             <section class="carouselPage" id="starWars2">
                 <a href="#starWars1" class="carouselArrow arrow-left">‹</a>
                 <div class="card">
@@ -391,8 +393,6 @@
             </section>
         </div>
     </div>
-<br>
-
 <footer>
     <div class="footerContainer">
         <div class="logo"></div>
@@ -408,4 +408,5 @@
     <p>Agustina García Rey and Matías Len</p>
 </footer>
 </body>
+
 </html>
