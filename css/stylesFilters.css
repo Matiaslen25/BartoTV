@@ -193,3 +193,7 @@ button.fav:hover{
         left: 20%;
     }
 }
+
+@media (min-width: 1366px) {  .infoPreview {
+    top: 40rem;
+}}
