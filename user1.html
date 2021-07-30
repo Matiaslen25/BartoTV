@@ -417,12 +417,13 @@
         } else {
             $('.principalHeader').css("background", "linear-gradient(to bottom,rgba(0,0,0,.7) 25%,rgba(0,0,0,0)");
         }
-
-        if($(this).scrollTop() > 1500) { 
+        
+        if(($(this).scrollTop() > 1500 && $(window).width() > 1200) || ($(this).scrollTop() > 1900 && $(window).width() > 1900)) { 
             $('.principalHeader').css("display", "none");
         }else {
             $('.principalHeader').css("display", "flex");
-        }});
+        }
+    });
 });
 </script>
 </body>
