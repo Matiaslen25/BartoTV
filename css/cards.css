@@ -58,6 +58,7 @@ html{
 
 /*TRENDING CARDS*/
 .trendingCategory{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(1,100%);
     overflow: hidden;
@@ -135,8 +136,9 @@ html{
 
 #continueWatching1{
     display: flex;
+    position: relative;
     flex-direction: row;
-    width: 1100px;
+    flex-wrap: wrap;
 }
 
 #continueWatching1 img {
@@ -162,7 +164,6 @@ h3 {
     }
 
     #continueWatching1{
-        height: 11rem;
         margin-top: 1rem;
     }
 
@@ -176,3 +177,37 @@ h3 {
         transform: scale(1.1);
     }
 }
+
+/***Carrusel Responsive***/
+
+@media (max-width: 1700px){
+    .responsive1{
+        display: none;
+    }
+}
+@media (max-width: 1300px){
+    .responsive2{
+        display: none;
+    }
+}
+@media (max-width: 1100px){
+    .responsive3{
+        display: none;
+    }
+}
+@media (max-width: 950px){
+    .responsive4{
+        display: none;
+    }
+}
+@media (max-width: 720px){
+    .responsive5{
+        display: none;
+    }
+}
+@media (max-width: 535px){
+    .responsive6{
+        display: none;
+    }
+}
+
