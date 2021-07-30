@@ -178,8 +178,8 @@ button.fav:hover{
         height: auto;
         width: 8rem;
         position:absolute;
-        top: 0%;
-        left: 0%;
+        top: 1%;
+        left: 3%;
     }
 
     .mobileMargin{
