@@ -16,6 +16,7 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>BartoTV</title>
     <link rel="shortcut icon" href="img/loguito.svg">
 </head>
@@ -409,23 +410,23 @@
         <p>Agustina García Rey and Matías Len</p>
     </footer>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Transition effect for navbar 
-            $(window).scroll(function() {
-              // checks if window is scrolled more than 500px, adds/removes solid class
-            if($(this).scrollTop() > 500 &&  $(window).width() > 560) { 
-                $('.principalHeader').css("background", "#1d2835");
-            } else {
-                $('.principalHeader').css("background", "linear-gradient(to bottom,rgba(0,0,0,.7) 25%,rgba(0,0,0,0)");
-            }
-            
-            if(($(this).scrollTop() > 1500 && $(window).width() > 1200) || ($(this).scrollTop() > 1900 && $(window).width() > 1900)) { 
-                $('.principalHeader').css("display", "none");
-            }else {
-                $('.principalHeader').css("display", "flex");
-            }
+            $(window).scroll(function () {
+                // checks if window is scrolled more than 500px, adds/removes solid class
+                if ($(this).scrollTop() > 500 && $(window).width() > 560) {
+                    $('.principalHeader').css("background", "#1d2835");
+                } else {
+                    $('.principalHeader').css("background", "linear-gradient(to bottom,rgba(0,0,0,.7) 25%,rgba(0,0,0,0)");
+                }
+
+                if (($(this).scrollTop() > 1500 && $(window).width() > 1200) || ($(this).scrollTop() > 1900 && $(window).width() > 1900)) {
+                    $('.principalHeader').css("display", "none");
+                } else {
+                    $('.principalHeader').css("display", "flex");
+                }
+            });
         });
-    });
     </script>
 </body>
 
