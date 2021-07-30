@@ -15,6 +15,12 @@
 
 .logoPreview{
     width: 15rem;
+    cursor: pointer; 
+}
+
+.infoPreview p {
+    position: relative;
+    top: -5px;
 }
 
 button.add{

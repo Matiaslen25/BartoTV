@@ -42,6 +42,18 @@ html{
 .card:hover{
     margin: 0 40px;
     transform: scale(1.2);
+    z-index:2;
+}
+.card img{
+    width: 341px;
+    height: 192px;
+    border-radius: 1rem;
+    box-shadow: rgb(0 0 0 / 69%) 0px 0px 0px -10px, rgb(0 0 0 / 73%) 0px 12px 10px -10px;
+}
+
+.card img:hover{
+    box-shadow: rgb(0 0 0 / 69%) 0px 6px 10px -10px, rgb(0 0 0 / 73%) 0px 26px 10px -10px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.7) 0,rgba(0,0,0,0));
 }
 
 .carouselArrow{
@@ -50,7 +62,7 @@ html{
     text-decoration: none;
     font-size: 6em;
     background:rgb(0,0,0);
-    width: 80px;
+    width: 85px;
     padding: 20px;
     text-align: center;
     z-index: 1;
@@ -74,10 +86,42 @@ html{
     display: flex;
     flex-direction: row;
     width: 1100px;
-    justify-content: space-around;
 }
 
-.card img{
-    width: 341px;
-    height: 192px;
+#continueWatching1 img {
+    margin:1rem;
+}
+
+h3 {
+    color: rgb(241, 229, 229);
+    font-size: 18px;
+    margin: 0.5rem 0 0 2rem;
+    text-shadow: 0 0 5px rgb(75, 72, 72);
+}
+
+
+/**Pantalla Agus**/
+@media (max-width: 1366px) {
+    .category{
+        height: 13rem;
+    }
+
+    .carouselArrow{ 
+        height: 6.6rem
+    }
+
+    #continueWatching1{
+        height: 11rem;
+        margin-top: 1rem;
+    }
+
+    .card img {
+        width: 15rem;
+        height: 9rem;
+    }
+
+    .card:hover{
+        margin: 0 20px;
+        transform: scale(1.1);
+    }
 }

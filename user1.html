@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylesHeader.css">
+    <link rel="stylesheet" href="css/stylesFilters.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>BartoTV</title>
     <link rel="shortcut icon" href="img/loguito.svg">
 </head>
@@ -61,10 +65,87 @@
         </div>
     </header>
     <div class="preview">
-        <video autoplay muted>
-            <source src="img/jujutsu.mp4" type="video/mp4">
+        <video autoplay muted loop id="myVideo">
+            <source src="img/jujutsu.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
+        <div class="infoPreview">
+            <img class="logoPreview" src="img/logo_jujutsu.png" alt="">
+            <p class="sinopsis">A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself.
+                He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.
+            </p>
+            <br>
+            <button class="mdc-fab mdc-fab--mini mdc-fab__icon add" aria-label="Create">
+                <div class="mdc-fab__ripple"></div>
+                <span class="mdc-fab__icon material-icons">add</span>
+            </button>
+            <button class="mdc-fab mdc-fab--mini mdc-fab__icon fav" aria-label="Favorite">
+                <div class="mdc-fab__ripple"></div>
+                <span class="mdc-fab__icon material-icons">favorite</span>
+            </button>
+
+        </div>
+    </div>
+    <div class="filters">
+        <a href="">
+            <div class="marvel">
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=600&aspectRatio=1.78&format=png"
+                    alt="">
+                <video autoplay loop playsinline
+                    src="https://vod-bgc-sa-east-1.media.dssott.com/bgui/ps01/disney/bgui/2019/08/01/1564676115-marvel.mp4"></video>
+            </div>
+        </a>
+        <a href="">
+            <div class="starwars">
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=600&aspectRatio=1.78&format=png"
+                    alt="">
+                <video autoplay loop playsinline src="img/starwars.webm"></video>
+            </div>
+        </a>
+        <a href="">
+            <div class="anime">
+                <img src="img/anime.png" alt="">
+                <video autoplay loop playsinline src="img/anime.webm"></video>
+
+            </div>
+        </a>
+        <a href="">
+            <div class="disney">
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=600&aspectRatio=1.78&format=png"
+                    alt="">
+                <video autoplay loop playsinline
+                    src="https://vod-bgc-sa-east-1.media.dssott.com/bgui/ps01/disney/bgui/2019/08/01/1564674844-disney.mp4"></video>
+            </div>
+        </a>
+    </div>
+    <div class="filters mobile">
+        <div>
+            <a href="">
+                <div class="filterMobile">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=600&aspectRatio=1.78&format=png"
+                        alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="filterMobile">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=600&aspectRatio=1.78&format=png"
+                        alt="">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="animeMobile filterMobile">
+                    <img src="img/anime.png" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="filterMobile">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=600&aspectRatio=1.78&format=png"
+                        alt="">
+                </div>
+            </a>
+        </div>
     </div>
 
     <!--Continue Watching-->
